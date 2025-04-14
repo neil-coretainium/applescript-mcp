@@ -1,12 +1,14 @@
 # Progress: Capture One MCP Server
 
 ## 1. Current Status
-MCP server is running and exposes the first Capture One automation tool (batch renaming) via the new `captureOneCategory`.
+MCP server is running and exposes Capture One automation tools via the `captureOneCategory`, including document/variant management and batch renaming functionality.
 
 ## 2. What Works
 - MCP server infrastructure and category system.
-- `captureOneCategory` with `batch_rename_collection` tool (sorts by date and batch renames variants, with optional counter reset).
-- Tool parameter schema for `resetCounter`.
+- `captureOneCategory` with the following tools:
+  - `batch_rename_collection`: Sorts by date and batch renames variants, with optional counter reset
+  - `listDocumentsAndVariants`: Retrieves all open documents and their variants in current collections
+- Tool parameter schemas for all tools.
 
 ## 3. What's Next / In Progress
 - Expose additional AppleScripts (e.g., resume_counter, apply_keywords, navigation scripts) as MCP tools.

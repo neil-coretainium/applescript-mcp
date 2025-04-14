@@ -6,6 +6,7 @@ import clearSavedCameraSettings from "./captureOne/clearSavedCameraSettings.js";
 import getSavedCameraSettings from "./captureOne/getSavedCameraSettings.js";
 import getCurrentCameraSettings from "./captureOne/getCurrentCameraSettings.js";
 import getCaptureOneVersion from "./captureOne/getCaptureOneVersion.js";
+import listDocumentsAndVariants from "./captureOne/listDocumentsAndVariants.js";
 
 /**
  * Capture One automation scripts.
@@ -71,5 +72,6 @@ export const captureOneCategory: ScriptCategory = {
     getSavedCameraSettings,
     getCurrentCameraSettings,
     getCaptureOneVersion,
+    listDocumentsAndVariants,
   ],
 };
