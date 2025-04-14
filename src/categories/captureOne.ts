@@ -1,5 +1,11 @@
 // src/categories/captureOne.ts
 import { ScriptCategory } from "../types/index.js";
+import saveCurrentCameraSettings from "./captureOne/saveCurrentCameraSettings.js";
+import checkCameraSettings from "./captureOne/checkCameraSettings.js";
+import clearSavedCameraSettings from "./captureOne/clearSavedCameraSettings.js";
+import getSavedCameraSettings from "./captureOne/getSavedCameraSettings.js";
+import getCurrentCameraSettings from "./captureOne/getCurrentCameraSettings.js";
+import getCaptureOneVersion from "./captureOne/getCaptureOneVersion.js";
 
 /**
  * Capture One automation scripts.
@@ -59,5 +65,11 @@ export const captureOneCategory: ScriptCategory = {
         end readCounter
       `,
     },
+    saveCurrentCameraSettings,
+    checkCameraSettings,
+    clearSavedCameraSettings,
+    getSavedCameraSettings,
+    getCurrentCameraSettings,
+    getCaptureOneVersion,
   ],
 };
